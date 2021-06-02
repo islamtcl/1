@@ -1,0 +1,19 @@
+
+body{
+  font-family: 'Open Sans','sans-serif';
+}
+
+nav h1{
+  font-family: 'Chango', cursive;
+}
+header{
+  background: url(showcasebottom.jpg);
+  background-attachment: fixed;
+}
+header h2{
+  font-family: 'Raleway', sans-serif;
+}
+#skills{
+  background: url(skillsbg.webp);
+  background-attachment: fixed;
+}
