@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
-<body class="bg-black">
+<body class="bg-black overflow-x-hidden">
     <nav class="fixed shadow-xl z-10 top-0 left-0 w-full h-12 bg-gray-900 flex flex-row align-middle justify-between">
         <div class="justify-around align-middle">
             <h1 class="text-lg text-white my-2 mx-4">Siyamtanzeel</h1>
@@ -27,7 +27,7 @@
         <div id="menu" class="absolute left-full bg-gray-900 transition ease-in-out duration-300 flex flex-col justify-center top-12 right-0 w-screen h-90 lg:flex lg:flex-row lg:relative lg:w-full lg:justify-between lg:top-0  lg:left-0 md:flex-row md:relative md:left-0 md:top-0 md:w-auto mx-2">
             <ul class="flex font-semibold flex-col items-center text-left space-y-4 lg:align-middle lg:flex-row space-x-5 lg:space-x-10 md:flex-row md:space-y-0 mx-6 my-3">
                 <br>
-                <li class="text-left w-full relative"><a href="" class=" block text-gray-300 hover:opacity-70 transition ease-in-out duration-300 lg:text-blue-500 lg:px-2 lg:py-1 lg:rounded">Home</a></li>
+                <li class="text-left w-full relative"><a href="" class=" block text-gray-300 hover:opacity-70 transition ease-in-out duration-300 text-indigo-600 lg:px-2 lg:py-1 lg:rounded">Home</a></li>
                 <li class="text-left w-full relative"><a href="" class=" block text-gray-300 hover:opacity-70 transition ease-in-out duration-300">About</a></li>
                 <li class="text-left w-full relative"><a href="#skills" class=" block text-gray-300 hover:opacity-70 transition ease-in-out duration-300">Services</a></li>
                 <li class="text-left w-full relative"><a href="" class=" block text-gray-300 hover:opacity-70 transition ease-in-out duration-300">Portfolio</a></li>    
@@ -51,20 +51,21 @@
             </div>
         </header>
 
-        <section class="w-screen grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 items-center align-middle">
-            <h2 class="my-10 md:col-span-12 lg:col-span-4 text-center text-blue-500 text-2xl">About Me</h2>
+        <section class="w-screen grid grid-cols-1 lg:overflow-x-hidden md:grid-cols-12 lg:grid-cols-12 items-center align-middle">
+            <h2 class="my-10 md:col-span-12 lg:col-span-4 text-center text-indigo-600 text-2xl">About Me</h2>
             <div class="lg:col-span-8 md:col-span-12 mx-5 mb-10 flex flex-col md:flex-row md:mt-5 lg:flex-row items-center bg-gray-900 rounded-lg lg:mx-24 lg:my-10">
                 <img class="rounded-full m-10" src="webcvr2.webp" alt="" width="230">
-                <div class="bg-gray-800 p-10 rounded-b-lg lg:rounded-r-lg">
-                    <p class="relative w-full text-gray-200 whitespace-pre-line">
+                <div class="bg-gray-800 p-10 rounded-b-lg md:rounded-r-lg md:rounded-b-none lg:rounded-r-lg lg:rounded-b-none">
+                    <p class="relative w-full text-gray-100 whitespace-pre-line">
                         A web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2020. I enjoy creating beautifully designed, intuitive and functional websites.Alongside Web design,I also edit photos in a way that viewers love to see.
                         </p>
-                        <h1 class="w-full mx-auto mt-5 text-blue-500 font-semibold">Tanzeel Muhammad Siyam</h1>
-                        <p class="w-full mx-auto text-gray-600">Web Developer and Photo Editor</p>
+                        <h1 class="w-full mx-auto mt-5 text-indigo-600 font-semibold">Tanzeel Muhammad Siyam</h1>
+                        <p class="w-full mx-auto text-gray-500">Web Developer and Photo Editor</p>
                 </div>
         </section>
-        <section class=" p-6" id="skills">
-            <div class="flex flex-row my-10 p-3 rounded-lg bg-black bg-opacity-50 text-left justify-start align-baseline w-full backdrop-filter backdrop-blur-sm">
+        <section class=" p-6 " id="skills">
+            <h2 class="w-full text-center mt-5 text-white text-2xl">My Skills</h2>
+            <div class="flex flex-row mx-auto my-10 p-3 rounded-lg bg-gray-700 bg-opacity-30 text-left items-center align-baseline w-full lg:w-10/12 backdrop-filter backdrop-blur-md">
                 <!--<h2 class="text-white text-lg">Photo Editing</h2> -->
                  <div class=" flex flex-col space-y-5 my-4 w-full">
                      <div id="html" class="mx-5">
@@ -72,7 +73,7 @@
                              HTML
                          </h2>
                         <div class="mt-1 bg-gray-500 w-full h-1">
-                            <div class="relative  w-52 bg-red-600 h-1">
+                            <div class="relative w-11/12 bg-red-600 h-1">
                             </div>
                         </div>
                      </div>
@@ -81,7 +82,7 @@
                              CSS
                          </h2>   
                          <div class="mt-1 bg-gray-500 w-full h-1">
-                             <div class="relative  w-48 bg-blue-500 h-1">
+                             <div class="relative w-10/12 bg-blue-500 h-1">
                              </div>
                          </div>
                      </div>
@@ -90,7 +91,7 @@
                          JavaScript
                          </h2>   
                          <div class="mt-1 bg-gray-500 w-full h-1">
-                             <div class="relative  w-12 bg-yellow-500 h-1">
+                             <div class="relative  w-3/12 bg-yellow-500 h-1">
                              </div>
                          </div>
                      </div>
@@ -99,7 +100,7 @@
                           Python
                          </h2>   
                          <div class="mt-1 bg-gray-500 w-full h-1">
-                             <div class="relative  w-8 bg-gradient-to-r from-blue-500 to-yellow-400 h-1">
+                             <div class="relative w-1/12 bg-gradient-to-r from-blue-500 to-yellow-400 h-1">
                              </div>
                          </div>
                      </div>
@@ -108,7 +109,7 @@
                            Photoshop
                          </h2>   
                          <div class="mt-1 bg-gray-500 w-full h-1">
-                             <div class="relative  w-36 bg-green-500 h-1">
+                             <div class="relative  w-7/12 bg-green-500 h-1">
                              </div>
                          </div>
                      </div>
