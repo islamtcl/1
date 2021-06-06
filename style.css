@@ -1,14 +1,18 @@
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body{
   font-family: 'Open Sans','sans-serif';
 }
 
 nav h1{
-  font-family: 'Chango', cursive;
+  font-family: 'Carter One', cursive;    letter-spacing:0.1rem;
 }
 header{
   background: url(showcasebottom.jpg);
-  background-attachment: fixed;
+  background-attachment:fixed;
 }
 header h2{
   font-family: 'Raleway', sans-serif;
@@ -16,4 +20,32 @@ header h2{
 #skills{
   background: url(skillsbg.webp);
   background-attachment: fixed;
+  background-position-x:10%;
+}
+#skills h2{
+  font-family: 'Open Sans','sans-serif';
+}
+#webdev::before{
+  content: '';
+  position: absolute;
+  z-index:0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to top left,#4338ca,#dc2626);
+  transform: rotate(7deg);
+}
+#photoedit::before{
+  content: '';
+  position: absolute;
+  z-index:0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to top left,#4338ca,#dc2626);
+  transform: rotate(6deg);
 }
